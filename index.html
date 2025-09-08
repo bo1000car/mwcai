@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Updates app</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <button id="sidebarToggle" class="hamburger" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- Try local file first; if missing, fall back to raw.githubusercontent URL. -->
+        <img
+          src="assets/rocket-cprm.png"
+          alt="Rocket CPRM logo"
+          class="brand-logo"
+          width="36" height="36"
+          onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/bo1000car/mwcai/main/rocket%20cprm.png';" />
+
+        <h1 class="brand">Product Updates app</h1>
+      </div>
+    </header>
+
+    <nav id="sidebar" class="sidebar" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+
+        <li class="nav-item nav-item--has-children">
+          <button class="submenu-toggle" aria-expanded="false" aria-controls="submenu-product-updates">
+            Product Updates
+            <span class="caret" aria-hidden="true">▾</span>
+          </button>
+          <ul id="submenu-product-updates" class="submenu" aria-hidden="true">
+            <li><a href="#">Solution Area Search</a></li>
+            <li><a href="#">Daily Updates</a></li>
+            <li><a href="#">RRB</a></li>
+            <li><a href="#">14-day look behind</a></li>
+            <li><a href="#">30-day look ahead</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="#">Skilling</a></li>
+        <li class="nav-item"><a href="#">Semester Planning</a></li>
+      </ul>
+    </nav>
+
+    <main class="main" id="main" tabindex="-1" aria-label="Main content">
+      <!-- main section is intentionally blank -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <small>
+          © 2025 Product Updates app
+          &nbsp;|&nbsp;
+          <a href="http://go.microsoft.com/fwlink/?LinkId=518021" target="_blank" rel="noopener noreferrer">Microsoft Data Privacy Notice</a>
+        </small>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
